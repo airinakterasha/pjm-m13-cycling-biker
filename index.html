@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom styles -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orangedeep: '#E76F51',
+              orangebglight: 'rgba(231, 111, 81, 0.10)',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- styles -->
+    <style>
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      .font-inter {
+        font-family: 'Inter', sans-serif;
+      }
+      .font-manrope {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <header class="md:container md:mx-auto">
+      <nav>
+        <div class="navbar bg-base-100 font-poppins">
+            <div class="flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl">Cycling</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <a class="btn bg-orangedeep">SignIn</a>
+            </div>
+        </div>
+      </nav>
+          <!-- carousal or slider -->
+          <!-- slider 1 -->
+          <div class="carousel w-full lg:h-[550px] bg-orangebglight">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="flex flex-col md:flex-row gap-20 p-5 lg:p-24">
+                <div class="space-y-4 flex-1">
+                  <h2 class="text-2xl md:text-6xl font-bold">
+                    Ride-on R15 V4 
+                    <br> 
+                    with Smile
+                  </h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit similique optio quo suscipit, debitis totam dolores voluptas eos dicta illo.</p>
+                  <button class="bg-orangedeep text-white p-2 rounded-xl">Purchase</button>
+                </div>
+                <div class="flex-1">
+                  <img src="./images/cycleslider/1.png" class="w-[400px]" />
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider 2  -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="flex flex-col md:flex-row gap-20 p-5 lg:p-24">
+                <div class="space-y-4 flex-1">
+                  <h2 class="text-2xl md:text-6xl font-bold">
+                    Ride-on R15 V4 
+                    <br> 
+                    with Smile
+                  </h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit similique optio quo suscipit, debitis totam dolores voluptas eos dicta illo.</p>
+                  <button class="bg-orangedeep text-white p-2 rounded-xl">Purchase</button>
+                </div>
+                <div class="flex-1">
+                  <img src="./images/cycleslider/2.png" class="w-[400px]" />
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="flex flex-col md:flex-row gap-20 p-5 lg:p-24">
+                <div class="space-y-4 flex-1">
+                  <h2 class="text-2xl md:text-6xl font-bold">
+                    Ride-on R15 V4 
+                    <br> 
+                    with Smile
+                  </h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit similique optio quo suscipit, debitis totam dolores voluptas eos dicta illo.</p>
+                  <button class="bg-orangedeep text-white p-2 rounded-xl">Purchase</button>
+                </div>
+                <div class="flex-1">
+                  <img src="./images/cycleslider/3.png" class="w-[400px]" />
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <div class="flex flex-col md:flex-row gap-20 p-5 lg:p-24">
+                <div class="space-y-4 flex-1">
+                  <h2 class="text-2xl md:text-6xl font-bold">
+                    Ride-on R15 V4 
+                    <br> 
+                    with Smile
+                  </h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit similique optio quo suscipit, debitis totam dolores voluptas eos dicta illo.</p>
+                  <button class="bg-orangedeep text-white p-2 rounded-xl">Purchase</button>
+                </div>
+                <div class="flex-1">
+                  <img src="./images/cycleslider/4.png" class="w-[400px]" />
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main class="md:container md:mx-auto">
+      <!-- featured cycle -->
+      <section>
+        
+      </section>
+      <!-- latest cycle -->
+      <section>
+        <h3 class="text-5xl font-semibold text-center my-10">Latest Cycle</h3>
+        <!-- first card -->
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="./images//latest/1.jpg" alt="Shoes"  class="rounded-[50px]"/></figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl">Awesome cycle !</h2>
+              <p class="text-base">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn bg-orangedeep">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="./images//latest/2.jpg" alt="Shoes" class="rounded-[80px]"/></figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl">Awesome cycle !</h2>
+              <p class="text-base">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn bg-orangedeep">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="./images//latest/3.jpg" alt="Shoes" class="rounded-[50px]"/></figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl">Awesome cycle !</h2>
+              <p class="text-base">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn bg-orangedeep">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- happy clients -->
+      <section class="my-24">
+        <h3 class="text-5xl mb-12 font-semibold text-center">Happy <span class="text-orangedeep">Clients Says</span></h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- 1st happy client -->
+          <div class="card bg-base-100 shadow-xl p-9">
+            <figure><img src="./images/client/user-1.png" alt="Shoes" class="w-1/2" /></figure>
+            <div class="card-body">
+              <p class="text-center"> If a dog chews shoes whose shoes does he choose?</p>
+              <div class="rating my-3 justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              </div>
+              <div class="text-center">
+                <h5 class="text-[#23A6F0] text-sm font-bold">Mr. Ashik</h5>
+                <h4 class="text-sm font-bold">Banker</h4>
+              </div>
+
+            </div>
+          </div>
+          <!-- 2nd happy client -->
+          <div class="card bg-base-100 shadow-xl p-9">
+            <figure><img src="./images/client/user-2.png" alt="Shoes" class="w-1/2" /></figure>
+            <div class="card-body">
+              <p class="text-center"> If a dog chews shoes whose shoes does he choose?</p>
+              <div class="rating my-3 justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              </div>
+              <div class="text-center">
+                <h5 class="text-[#23A6F0] text-sm font-bold">Mr. Ashik</h5>
+                <h4 class="text-sm font-bold">Banker</h4>
+              </div>
+
+            </div>
+          </div>
+          <!-- 3rd happy client -->
+          <div class="card bg-base-100 shadow-xl p-9">
+            <figure><img src="./images/client/user-3.png" alt="Shoes" class="w-1/2" /></figure>
+            <div class="card-body">
+              <p class="text-center"> If a dog chews shoes whose shoes does he choose?</p>
+              <div class="rating my-3 justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+              </div>
+              <div class="text-center">
+                <h5 class="text-[#23A6F0] text-sm font-bold">Mr. Ashik</h5>
+                <h4 class="text-sm font-bold">Banker</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
